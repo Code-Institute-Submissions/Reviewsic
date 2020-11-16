@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviewsic</title>
-</head>
-<body>
+
+{% extends "base.html" %}
+{% block content %}
+
+    <h2> REVIEWS</h2>
+    
     {% for review in reviews %}
         {{ review.artist_name }}<br>
         {{ review.category_name }}<br>
@@ -14,5 +12,5 @@
         {{ review.image }}<br>
         {{ review.review_text }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
