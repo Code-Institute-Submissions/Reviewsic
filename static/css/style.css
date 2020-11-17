@@ -17,3 +17,27 @@
     
 }
 
+/* Fonts */
+.header-font{
+    font-family: "Permanent Marker", sans-serif;
+    
+}
+
+.form-font{
+     font-family: "Roboto", sans-serif;
+     font-weight: 500;  
+}
+
+/* buttons */
+.btn-large{
+    color: black;
+    background: white;
+}
+
+.btn-large:hover{
+    background: #81c784;
+}
+
+.btn-large:focus{
+    background: #bdbdbd ;
+}
