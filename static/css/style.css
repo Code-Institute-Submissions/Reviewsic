@@ -8,19 +8,24 @@
 
 .brand-logo{
     font-family: "Permanent Marker", sans-serif;
-    margin-left: 10px;
-   
+    margin-left: 10px; 
+}
+
+nav .brand-logo {
+    color: black;
 }
 
 .main-nav{
     font-family: "Permanent Marker", sans-serif;
     
 }
-
+.text-color-nav{
+    color: black;
+}
 /* Fonts */
 .header-font{
     font-family: "Permanent Marker", sans-serif;
-    
+    margin-top: 2em;    
 }
 
 .form-font{
@@ -40,4 +45,10 @@
 
 .btn-large:focus{
     background: #bdbdbd ;
+}
+
+/* Registration Form */
+
+.form-register{
+    margin-top: 5em;
 }

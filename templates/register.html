@@ -2,14 +2,14 @@
 
 <h3 class="center-align uppercase header-font">Join The Community</h3>
 <div class="row">
-  <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register')}}">
+  <form class="col s12 m8 offset-m2 form-register" method="POST" action="{{ url_for('register')}}">
     <div class="card-panel grey lighten-1">
 
       <!--UserName-->
       <div class="row">
         <div class="input-field col s12">
           <i class="fas fa-user-circle prefix"></i>
-          <input id="username" name="username" type="text" class="validate" />
+          <input id="username" name="username" type="text" class="validate" required />
           <label for="username" class="form-font">User Name</label>
         </div>
       </div>
@@ -18,7 +18,7 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="fas fa-envelope prefix"></i>
-          <input id="email" name="email" type="email" class="validate" />
+          <input id="email" name="email" type="email" class="validate" required/>
           <label for="email" class="form-font">Email</label>
         </div>
       </div>
@@ -27,7 +27,7 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="fas fa-key prefix"></i>
-          <input id="password" name="password" type="password" class="validate">
+          <input id="password" name="password" type="password" class="validate" required>
           <label for="password">Password</label>
         </div>
       </div>
