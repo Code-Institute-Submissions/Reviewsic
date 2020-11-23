@@ -20,10 +20,11 @@
       <a href="{{ url_for('get_reviews')}}" class="brand-logo">REVIEWSIC</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars "></i></a>
       <ul class="right hide-on-med-and-down main-nav">
+        <li><a href="{{ url_for('login')}}" class="text-color-nav">Log In</a></li>
         <li><a href="{{ url_for('get_reviews')}}" class="text-color-nav">Reviews</a></li>
         <li><a href="{{ url_for('register')}}" class="text-color-nav">Register</a></li>
         <li><a href="#" class="text-color-nav">Upload Review</a></li>
-        <li><a href="#" class="text-color-nav">Profile</a></li>       
+        <li><a href="{{ url_for('profile')}}" class="text-color-nav">Profile</a></li>       
         <li><a href="#" class="text-color-nav">Log Out</a></li>
       </ul>
     </div>
@@ -32,10 +33,11 @@
 <!--Mobile Nav bar-->
   <ul class="sidenav grey lighten-3 main-nav" id="mobile-demo">
         <li><h4 class="center-align ">REVIEWSIC</h4></li>
+        <li><a href="{{ url_for('login')}}">Log In</a></li>
        <li><a href="{{ url_for('get_reviews')}}">Reviews</a></li>
        <li><a href="{{ url_for('register')}}">Register</a></li>
         <li><a href="#">Upload Review</a></li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="{{ url_for('profile')}}">Profile</a></li>
         <li><a href="#">Log Out</a></li>
   </ul>
  </header>
@@ -64,4 +66,7 @@
     {% block scripts %}
     {% endblock %}
 </body>
+<div class="footer green lighten-2">
+  <p class="foot-p">© Adam Sears Design 2020 All Rights Reserved</p>
+</div>
 </html>

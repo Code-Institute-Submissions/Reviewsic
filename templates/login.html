@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+
+<h3 class="center-align uppercase header-font">Login</h3>
+<div class="row">
+  <form class="col s12 m8 offset-m2 form-register" method="POST" action="{{ url_for('login')}}">
+    <div class="card-panel grey lighten-1">
+
+      <!--UserName-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-sign-in-alt prefix"></i>
+          <input id="username" name="username" type="text" class="validate" minlength="5" maxlength="15" 
+          pattern="^[a-zA-Z0-9]{5,15}$" required />
+          <label for="username" class="form-font">User Name</label>
+        </div>
+      </div>
+
+      <!--Email-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-envelope-open prefix"></i>
+          <input id="email" name="email" type="email" class="validate"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+          <label for="email" class="form-font">Email</label>
+        </div>
+      </div>
+
+    <!--Password-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fas fa-unlock prefix"></i>
+          <input id="password" name="password" type="password" minlength="5" maxlength="15" 
+          pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+          <label for="password">Password</label>
+        </div>
+      </div>
+    <!--Login-->
+
+        <div class="row">
+            <button type="submit" class="col s6  offset-s3 btn-large form-font">LOG ME IN!</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+{% endblock %}
