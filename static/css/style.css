@@ -53,6 +53,7 @@ nav .brand-logo {
 .btn-large{
     color: black;
     background: white;
+    border-radius: 6px;
 }
 
 .btn-large:hover{
@@ -67,4 +68,12 @@ nav .brand-logo {
 
 .form-register{
     margin-top: 5em;
+}
+
+
+/* Landing Page */
+
+.landing-card{
+    border-radius: 12px;
+    padding: 15px;
 }
