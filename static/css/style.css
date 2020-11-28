@@ -54,6 +54,17 @@ nav .brand-logo {
     color: black;
     background: white;
     border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-btn{
+    color: black;
+    background: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-btn:hover{
+    background: #81c784;
 }
 
 .btn-large:hover{
@@ -76,4 +87,9 @@ nav .brand-logo {
 .landing-card{
     border-radius: 12px;
     padding: 15px;
+}
+
+/* Review Page */
+.review-card{
+    border-radius: 12px;
 }
