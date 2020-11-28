@@ -1,43 +1,40 @@
+{% extends "base.html" %} {% block content %}
 
-{% extends "base.html" %}
-{% block content %}
+<h2 class="header-font center-align">REVIEWS</h2>
 
-    <h2> REVIEWS</h2>
-    
+<div class="row">
+  <div class="col s12 m6 grey lighten-2">
     {% for review in reviews %}
-        {{ review.artist_name }}<br>
-        {{ review.category_name }}<br>
-        {{ review.record_name }}<br>
-        {{ review.rel_date }}<br>
-        {{ review.image }}<br>
-        {{ review.review_text }}<br>
-    {% endfor %}
+    <div class="card grey lighten-4 review-card{">
+      <div class="card-image">
+        <img class="responsive-img" src="{{ review.image }}">
+      </div>
+      <div class="card-content">
+      <h4 class="header-font"> {{ review.artist_name }}</h4>
+      <h5 class="header-font"> {{review.category_name }} : {{ review.record_name }}</h5>
+      <h6 class="header-font"> Released {{ review.rel_date }}</h6>
+      <h7 class="header-font">Written By : {{ review.creator }}</h7>
+      </div>
+      <div class="card-action">
+        <a
+          class="waves-effect waves-light btn modal-trigger modal-btn"
+          href="#modal1"
+          >Read Review</a >
 
-    <div class="row">
-        <div class="col s12 m6">
-        <div class="card grey lighten-2 review-card{">
-            <div class="card-image ">
-            <img src="#">
-            </div>
-            <div class="card-content">
-           <p>Example Text</p>
-            </div>
-            <div class="card-action">
-            <a class="waves-effect waves-light btn modal-trigger modal-btn" href="#modal1">Read More</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4 class="header-font">Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat ">Agree</a>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 class="header-font"> {{ review.artist_name }}</h4>
+            <h5 class="header-font"> {{review.category_name }} : {{ review.record_name }}</h5>
+            <h6 class="header-font"> Released {{ review.rel_date }}</h6>
+             <h7 class="header-font">Written By : {{ review.creator }}</h7>
+            <p>{{ review.review_text }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-            </div>
-        </div>
-        </div>
-    </div>
+  {% endfor %}
+</div>
 
 {% endblock %}
