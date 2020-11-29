@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<h3 class="center-align uppercase header-font">Upload Review</h3>
+
+  <div class="row">
+    <form class="col s6 offset-s3" method="POST" action="">
+      <div class="row">
+      <!--Artist Name-->
+        <div class="input-field col s12">
+          <i class="fas fa-microphone-alt small prefix"></i>
+          <input id="icon_mic" type="text" class="validate" placeholder="Artist Name">
+        </div>
+      <!--Record/Venue Name-->
+        <div class="input-field col s12">
+          <i class="fas fa-record-vinyl small prefix"></i>
+          <input id="icon_record" type="text" class="validate" placeholder="Record/Venue Name">
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+{% endblock %}

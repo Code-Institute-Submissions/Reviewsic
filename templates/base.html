@@ -22,7 +22,7 @@
       <ul class="right hide-on-med-and-down main-nav">
         {% if session.user %}
             <li><a href="{{ url_for('get_reviews')}}" class="text-color-nav">Reviews</a></li>
-            <li><a href="#" class="text-color-nav">Upload Review</a></li>
+            <li><a href="{{ url_for('upload_review')}}" class="text-color-nav">Upload Review</a></li>
             <li><a href="{{ url_for('profile', username=session['user'])}}" class="text-color-nav">Profile</a></li>       
             <li><a href="{{ url_for('logout')}}" class="text-color-nav">Log Out</a></li>
         {% else %}
@@ -39,7 +39,7 @@
         <li><h4 class="center-align ">REVIEWSIC</h4></li>
        {% if session.user %}
             <li><a href="{{ url_for('get_reviews')}}" class="text-color-nav">Reviews</a></li>
-            <li><a href="#" class="text-color-nav">Upload Review</a></li>
+            <li><a href="{{ url_for('upload_review')}}" class="text-color-nav">Upload Review</a></li>
             <li><a href="{{ url_for('profile', username=session['user'])}}" class="text-color-nav">Profile</a></li>       
             <li><a href="{{ url_for('logout')}}" class="text-color-nav">Log Out</a></li>
         {% else %}
