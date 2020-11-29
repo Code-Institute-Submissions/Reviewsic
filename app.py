@@ -113,7 +113,7 @@ def upload_review():
             "review_text": request.form.get("review_text"),
             "creator": session["user"]
         }
-        mongo.db.reviews.inset_one(reviews)
+        mongo.db.reviews.insert_one(reviews)
         flash("Review Successfully Uploaded!")
         return redirect(url_for("get_reviews"))
 
