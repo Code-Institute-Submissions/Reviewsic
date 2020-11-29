@@ -1,7 +1,13 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-  });
-
-    $(document).ready(function(){
     $('.modal').modal();
+    $('select').formSelect();
+    $('.datepicker').datepicker({
+        format: "dd mmmm, yyyy",
+        yearRange: 85,
+        showClearBtn: true,
+        i18n: {
+            done:"Select"
+        }
+    });
   });
