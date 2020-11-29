@@ -101,8 +101,22 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/upload_review")
+@app.route("/upload_review", methods=["GET", "POST"])
 def upload_review():
+    if request.method == "POST":
+        reviews = {
+            "category_name": request.form.get("category_name"),
+            "artist_name": request.form.get("artist_name"),
+            "record_name": request.form.get("record_name"),
+            "rel_date": request.form.get("rel_date"),
+            "image": request.form.get("image"),
+            "review_text": request.form.get("review_text"),
+            "creator": session["user"]
+        }
+        mongo.db.reviews.inset_one(reviews)
+        flash("Review Successfully Uploaded!")
+        return redirect(url_for("get_reviews"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("upload_review.html", categories=categories)
 
