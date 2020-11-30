@@ -93,3 +93,9 @@ nav .brand-logo {
 .review-card{
     border-radius: 12px;
 }
+
+.review{
+    margin: 2em;
+    display: inline-block;
+
+}

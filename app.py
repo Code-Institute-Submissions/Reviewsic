@@ -60,7 +60,9 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        reviews = list(mongo.db.reviews.find())
+        return render_template("profile.html",
+                               reviews=reviews, username=username)
 
     return redirect(url_for("login"))
 
