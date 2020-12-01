@@ -105,7 +105,7 @@ nav .brand-logo {
 
 
 /* Review and profile cards */
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
 .row .col.m3{
     width: 30%;
     margin-left: 1em;
@@ -113,6 +113,12 @@ nav .brand-logo {
 
 .edit-btn{
     margin-top: 1em;
-}
+}}
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 736px){
+    .row .col.m3{
+        width: 90%;
+    }
 }
