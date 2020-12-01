@@ -4,7 +4,7 @@
 <!--Card Structure -->
 <div class="row">
 {% for review in reviews %}
-  <div class="col s12 m3 grey lighten-2 review ">
+  <div class="col s12 m3 l3 grey lighten-2 review ">
      <div class="card grey lighten-4 review-card">
       <div class="card-image">
         <img class="responsive-img" src="{{ review.image }}">
@@ -17,7 +17,7 @@
       </div>
       <div class="card-action">
         <a
-          class="waves-effect waves-light btn modal-trigger modal-btn"
+          class="waves-effect waves-light btn-small modal-trigger modal-btn"
           href="#modal-{{ review._id }}"
           >Read Review</a >
 
