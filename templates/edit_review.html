@@ -5,16 +5,21 @@
 <div class="row">
 	<form class="col s6 offset-s3" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
 
-		<!--Catergory Name-->
+		<!--Catergory Select-->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-bars small prefix"></i>
 				<select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled selected>Choose your catergory</option>
+                    <option value="" disabled>Choose your catergory</option>
                     {% for category in categories %}
-                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% if category.category_name == review.category_name %}
+                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                        {% else %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
+
 				<label for="category_name">Catergory Selection</label>
 			</div>
 		</div>
@@ -24,7 +29,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-microphone-alt small prefix"></i>
 				<input id="artist_name" name="artist_name" minlength="5" maxlength="50"
-                    type="text" class="validate" required>
+                    value="{{ review.artist_name }}" type="text" class="validate" required>
 				<label for="artist_name">Artist Name</label>
 			</div>
 		</div>
@@ -32,7 +37,8 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-record-vinyl small prefix"></i>
-				<input id="record_name" name="record_name" type="text" class="validate" required>
+				<input id="record_name" name="record_name" type="text" 
+                value="{{ review.record_name }}" class="validate" required>
 				<label for="record_name">Record/Venue Name</label>
 			</div>
 		</div>
@@ -40,7 +46,8 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-calendar-alt prefix"></i>
-				<input id="rel_date" name="rel_date" type="text" class="datepicker validate" required>
+				<input id="rel_date" name="rel_date" type="text" value="{{ review.rel_date }}" 
+                class="datepicker validate" required>
 				<label for="rel_date">Release/Show Date</label>
 			</div>
 		</div>
@@ -48,7 +55,8 @@
         <div class="row">
 			<div class="input-field col s12">
 				<i class="far fa-image prefix small"></i>
-				<input id="image" name="image" type="text" class="validate" required>
+				<input id="image" name="image" type="text" value="{{ review.image }}"
+                class="validate" required>
 				<label for="image">Image Upload (URL)</label>
 			</div>
 		</div>
@@ -58,7 +66,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-pen-square small prefix"></i>
 				<textarea id="review_text" name="review_text" class="materialize-textarea validate"
-            minlength="100" maxlength="5000" required></textarea>
+            minlength="100" maxlength="5000" required>{{ review.review_text }}</textarea>
 				<label for="review_text">Write In Me</label>
 			</div>
 
@@ -68,6 +76,12 @@
                     <button type="submit" class="btn-large form-font">
                         Edit Review <i class="fas fa-user-edit right"></i>
                     </button>
+                        <a href="{{ url_for('profile', username=session['user'])}}" 
+                        class="waves-effect waves-light btn-large red darken-3 form-font">Cancel
+                        <i class="fas fa-window-close right"></i>
+                        </a>
+                        
+                    
                 </div>
             </div>
 		</div>
