@@ -4,7 +4,7 @@
 /* Background */
 
 .bg{
-    
+
   background-image: url("../images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -120,12 +120,9 @@ nav .brand-logo {
     border-radius: 12px;
     
 }
-
 .review{
-    margin: 2em;
-    
+    margin: 2em;   
 }
-
 
 /* Review and profile cards */
 .card.large {
@@ -136,21 +133,11 @@ nav .brand-logo {
 
 /* Media Query */
 
-/* Review and profile cards 
-@media only screen and (min-width: 768px){
-.row .col.m3{
-    width: 30%;
-    margin-left: 1em;
-}
-
-.edit-btn{
-    margin-top: 1em;
-}}
 
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 736px){
-    .row .col.m3{
-        width: 90%;
+    .row .col.s6{
+        width: 100%;
     }
-}*/
+}
