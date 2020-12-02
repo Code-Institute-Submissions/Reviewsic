@@ -5,18 +5,18 @@
 
 <!--Search Function-->
 <div class="row">
-    <form action="{{ url_for('search') }}" method="post" class="col s6 l6 right">
+    <form action="{{ url_for('search') }}" method="post" class="col  l6 right">
         <div class="row valign-wrapper center-align">
-                <div class="input-field col s12 m8">
+                <div class="input-field col s12 search-btns">
                 <i class="fas fa-search prefix"></i>
                 <input type="text" name="searching" id="searching" minlength="3" class="validate" required>
-                <label for="searching">Search Reviews</label>
+                <label for="searching">Search</label>
             </div>
-            <div class="col s12 m4">
-                    <a href="{{ url_for('get_reviews') }}" class="red darken-3 btn-small text-shadow ">Reset</a>
+            <div class="col s12">                 
                     <button type="submit" class="green lighten-2 btn-small text-shadow">
-                        <i class="fas fa-search left"></i> Search
+                        <i class="fas fa-search center"></i>
                 </button>
+                <a href="{{ url_for('get_reviews') }}" class="red darken-3 btn-small text-shadow ">Clear</a>
              </div>
         </div>
     </form>

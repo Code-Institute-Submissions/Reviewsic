@@ -2,20 +2,20 @@
 
 <h3 class="center-align uppercase header-font">Upload Review</h3>
 
+<div class="container grey lighten-2">
 <div class="row">
-	<form class="col s6 offset-s3" method="POST" action="{{ url_for('upload_review') }}">
+	<form class="col s12 m8 offset-m2 form-font " method="POST" action="{{ url_for('upload_review') }}">
 
-		<!--Catergory Name-->
+		<!--Category Name-->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-bars small prefix"></i>
-				<select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled selected>Choose your catergory</option>
+				<select id="category_name" name="category_name" class="validate text-font" required>
+                    <option value="" disabled selected>Choose your category</option>
                     {% for category in categories %}
                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                     {% endfor %}
                 </select>
-				<label for="category_name">Catergory Selection</label>
 			</div>
 		</div>
 
@@ -24,7 +24,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-microphone-alt small prefix"></i>
 				<input id="artist_name" name="artist_name" minlength="1" maxlength="50"
-                    type="text" class="validate" required>
+                    type="text" class="validate text-font" required>
 				<label for="artist_name">Artist Name</label>
 			</div>
 		</div>
@@ -32,16 +32,16 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-record-vinyl small prefix"></i>
-				<input id="record_name" name="record_name" type="text" class="validate" required>
-				<label for="record_name">Record/Venue Name</label>
+				<input id="record_name" name="record_name" type="text" class="validate text-font" required>
+				<label for="record_name">Record / Venue Name</label>
 			</div>
 		</div>
 		<!--Release Date-->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-calendar-alt prefix"></i>
-				<input id="rel_date" name="rel_date" type="text" class="datepicker validate" required>
-				<label for="rel_date">Release/Show Date</label>
+				<input id="rel_date" name="rel_date" type="text" class="datepicker validate text-font" required>
+				<label for="rel_date">Release / Show Date</label>
 			</div>
 		</div>
         <!--Image-->
@@ -57,7 +57,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-pen-square small prefix"></i>
-				<textarea id="review_text" name="review_text" class="materialize-textarea validate"
+				<textarea id="review_text" name="review_text" class="materialize-textarea validate text-font"
             minlength="100" maxlength="5000" required></textarea>
 				<label for="review_text">Write In Me!</label>
 			</div>
@@ -72,6 +72,7 @@
             </div>
 		</div>
 	</form>
+</div>
 </div>
 
 

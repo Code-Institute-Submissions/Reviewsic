@@ -1,16 +1,16 @@
 {% extends "base.html" %} {% block content %}
 
 <h3 class="center-align uppercase header-font">Edit Review</h3>
-
+<div class="container grey lighten-2">
 <div class="row">
-	<form class="col s6 offset-s3" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
+	<form class="col s12 m8 offset-m2 form-font" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
 
 		<!--Catergory Select-->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-bars small prefix"></i>
-				<select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled>Choose your catergory</option>
+				<select id="category_name" name="category_name" class="validate text-font" required>
+                    <option value="" disabled>Choose your category</option>
                     {% for category in categories %}
                         {% if category.category_name == review.category_name %}
                             <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
@@ -20,7 +20,6 @@
                     {% endfor %}
                 </select>
 
-				<label for="category_name">Catergory Selection</label>
 			</div>
 		</div>
 
@@ -29,7 +28,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-microphone-alt small prefix"></i>
 				<input id="artist_name" name="artist_name" minlength="1" maxlength="50"
-                    value="{{ review.artist_name }}" type="text" class="validate" required>
+                    value="{{ review.artist_name }}" type="text" class="validate text-font" required>
 				<label for="artist_name">Artist Name</label>
 			</div>
 		</div>
@@ -38,7 +37,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-record-vinyl small prefix"></i>
 				<input id="record_name" name="record_name" type="text" 
-                value="{{ review.record_name }}" class="validate" required>
+                value="{{ review.record_name }}" class="validate text-font" required>
 				<label for="record_name">Record/Venue Name</label>
 			</div>
 		</div>
@@ -47,7 +46,7 @@
 			<div class="input-field col s12">
 				<i class="fas fa-calendar-alt prefix"></i>
 				<input id="rel_date" name="rel_date" type="text" value="{{ review.rel_date }}" 
-                class="datepicker validate" required>
+                class="datepicker validate text-font" required>
 				<label for="rel_date">Release/Show Date</label>
 			</div>
 		</div>
@@ -56,7 +55,7 @@
 			<div class="input-field col s12">
 				<i class="far fa-image prefix small"></i>
 				<input id="image" name="image" type="text" value="{{ review.image }}"
-                class="validate" required>
+                class="validate text-font" required>
 				<label for="image">Image Upload (URL)</label>
 			</div>
 		</div>
@@ -65,7 +64,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="fas fa-pen-square small prefix"></i>
-				<textarea id="review_text" name="review_text" class="materialize-textarea validate"
+				<textarea id="review_text" name="review_text" class="materialize-textarea validate text-font"
             minlength="100" maxlength="5000" required>{{ review.review_text }}</textarea>
 				<label for="review_text">Write In Me</label>
 			</div>
@@ -86,6 +85,7 @@
             </div>
 		</div>
 	</form>
+</div>
 </div>
 
 

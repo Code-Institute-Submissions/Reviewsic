@@ -37,6 +37,9 @@ nav .brand-logo {
     color: black;
 }
 
+.fa-bars{
+    color: black;
+}
 
 /* Fonts */
 .header-font{
@@ -46,18 +49,19 @@ nav .brand-logo {
 
 .form-font{
      font-family: "Roboto", sans-serif;
-     font-weight: 500;  
+     font-weight: 500;
+      
 }
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+.text-font{
+    font-family: "Roboto", sans-serif;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+.input-field>label {
+  color: black;
+}
+
+
 
 .foot-p{
     font-family: "Roboto", sans-serif;
@@ -66,10 +70,11 @@ nav .brand-logo {
     padding-left: 2em;
     
 }
+
 /* buttons */
 .btn-large{
     color: black;
-    background: white;
+    background: #ffa726;
     border-radius: 6px;
     font-family: "Roboto", sans-serif;
 }
@@ -89,8 +94,9 @@ nav .brand-logo {
 }
 
 .btn-large:focus{
-    background: #bdbdbd ;
+    background: #81c784 ;
 }
+
 
 
 /* Registration Form */
@@ -102,7 +108,17 @@ nav .brand-logo {
 /* Landing Page */
 
 .callout{
-    padding-top: 30px;
+    padding-top: 40px;
+
+}
+
+.block-divider{
+    height: 3px;
+     margin: auto;
+    width: 200px;
+    background-color:  #1F6EAB;
+    
+
 }
 
 .landing-cont{
@@ -112,6 +128,11 @@ nav .brand-logo {
 .landing-card{
     border-radius: 12px;
     padding: 15px;
+}
+
+.slogan{
+    padding-top: 20px;
+    font-size: 21px;
 }
 
 
@@ -129,15 +150,24 @@ nav .brand-logo {
     height: 750px;
     }
 
+/* Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
+  main {
+    flex: 1 0 auto;
+  }
 
 /* Media Query */
 
 
-@media only screen 
+/* @media only screen 
 and (min-width : 320px) 
 and (max-width : 736px){
     .row .col.s6{
         width: 100%;
     }
-}
+} */

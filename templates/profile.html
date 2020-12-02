@@ -4,10 +4,11 @@
         {{ username }}'s Profile
       </h3>
 <!--Card Structure -->
-<div class="row">
+<div class="row s12 m4">
 {% for review in reviews %}
  {% if session.user|lower == review.creator|lower %}
- <div class="col s12 l4 grey lighten-2">
+ 
+ <div class="col s12 grey lighten-2">
      <div class="card grey lighten-4 review-card card large">
       <div class="card-image">
         <img class="responsive-img" src="{{ review.image }}">
