@@ -1,11 +1,32 @@
 {% extends "base.html" %} {% block content %}
 
 <h2 class="header-font center-align">REVIEWS</h2>
-<!--Card Structure -->
+
+
+<!--Search Function-->
 <div class="row">
+    <form action="{{ url_for('search') }}" method="post" class="col s6 offset-s3">
+        <div class="row valign-wrapper center-align">
+                <div class="input-field col s12 m8">
+                <i class="fas fa-search prefix"></i>
+                <input type="text" name="searching" id="searching" minlength="3" class="validate" required>
+                <label for="searching">Search Reviews</label>
+            </div>
+            <div class="col s12 m4">
+                    <a href="{{ url_for('get_reviews') }}" class="red darken-3 btn-small text-shadow ">Reset</a>
+                    <button type="submit" class="green lighten-2 btn-small text-shadow">
+                        <i class="fas fa-search left"></i> Search
+                </button>
+             </div>
+        </div>
+    </form>
+</div>
+<!--Card Structure -->
+{% if reviews|length > 0 %}
+<div class="row grey lighten-2">
 {% for review in reviews %}
-  <div class="col s12 m3 l3 grey lighten-2 review ">
-     <div class="card grey lighten-4 review-card">
+  <div class="col s6 offset-s3review">
+     <div class="card grey lighten-4 review-card card large">
       <div class="card-image">
         <img class="responsive-img" src="{{ review.image }}">
       </div>
@@ -36,5 +57,9 @@
   </div>
   {% endfor %}
 </div>
+
+{% else %}
+<h3 class="red-text text-darken-3 header-font center-align">No Results Found</h3>
+{% endif %}
 
 {% endblock %}
