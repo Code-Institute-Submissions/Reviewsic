@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link to favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+    <!--Link to font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" type="text/css"/>
+
+     <!--Link to materialize CDN-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+
+     <!-- Link to CSS styles -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css">
      {% block styles %}
      {% endblock %}
@@ -49,6 +58,7 @@
   </ul>
  </header>
       <section>
+
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -73,6 +83,8 @@
     {% block scripts %}
     {% endblock %}
 </body>
+
+<!-- Footer -->
 <div class="footer green lighten-2">
   <p class="foot-p">© Adam Sears Design 2020 All Rights Reserved</p> 
 </div>
