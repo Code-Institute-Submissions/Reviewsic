@@ -91,7 +91,6 @@ Various different technologies have been used throughout my project, they are as
 - **Github** A cloud-based hosting service that lets you manage Git repositories.
 - **Git**  A Distributed Version Control tool that is used to store different versions of a file in a remote or local repository.
 - **Gitpod** An online IDE, providing a full working development environment.
-- **Github Pages** GitHub Pages are public webpages hosted and easily published through GitHub.
 - **Bootstrap** A front-end framework for developing responsive and mobile-first websites.
 - **Markdown** A lightweight markup language with plain-text formatting syntax.
 - **HTML5** Another markup language, predominantly used to structure and present content to the world wide web.
@@ -99,6 +98,7 @@ Various different technologies have been used throughout my project, they are as
 - **jQuery** is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
 - **Python** Python is an interpreted, high-level and general purpose programming language
 - **MongoDB** MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
+- **Heroku** Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 
 ## Testing <a name="test"></a>
@@ -131,14 +131,16 @@ The game was desinged using Google Chrome however functions on all browsers ment
 
 
 ## Deployment <a name="deploy"></a>
-In order to successfully publish the game site these following steps had to be taken:
-- Open **Repositories** on the **GitHub** home page, after logging in.
-- Select **Settings**
-- Scroll down to **Github Pages**
-- Select the dropdown menu under **Source** 
-- Select **Master Branch** and press **Save**
-- The page will refresh, scroll back down to **GitHub Pages** and you will see a green box with a green tick along with the statement
-**Your site is published at** https://adams-ears.github.io/KeyBeats/.
+In order to successfully publish the website to **Heroku** use the following steps :
+- Head to the [Heroku](heroku.com) website and signup 
+- Once Signed up Select **Create New App** from the New dropdown menu
+- Fill in **App-name box**  and select **Region**
+- Once on homepage select **Connect to Github** in the **Deployment Method**
+- Make sure your Github name is showing and search for the repo name in the search box
+- Once found click **Connect**
+**Your site will now be published at** https://reviewsic-ms3.herokuapp.com/.
+
+-Environment variables can be amended in settings from main page and then select Reveal Config Vars
 
 ## Credits <a name="credit"></a>
 
