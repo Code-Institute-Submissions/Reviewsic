@@ -28,13 +28,13 @@
   <div class="col s12 l4 m4">
      <div class="card grey lighten-4 review-card card large">
       <div class="card-image">
-        <img class="responsive-img" src="{{ review.image }}">
+        <img class="responsive-img" src="{{ review.image }}" alt="card image">
       </div>
       <div class="card-content">
       <h4 class="header-font"> {{ review.artist_name }}</h4>
       <h5 class="header-font"> {{review.category_name }} : {{ review.record_name }}</h5>
       <h6 class="header-font"> Released {{ review.rel_date }}</h6>
-      <h7 class="header-font">Written By : {{ review.creator }}</h7>
+      <h6 class="header-font">Written By : {{ review.creator }}</h6>
       </div>
       <div class="card-action">
         <a
