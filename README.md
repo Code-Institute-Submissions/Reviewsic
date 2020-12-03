@@ -1,10 +1,11 @@
- ![](https://github.com/adams-ears/KeyBeats/blob/master/assets/images/kbmock.png)
+ ![](https://github.com/adams-ears/Reviewsic/blob/master/static/images/mockup.png)
 
-# KeyBeats
+# Reviewsic
 [Live Site](https://reviewsic-ms3.herokuapp.com/)
 
-This project has been designed as a webbased memory game. The **KeyBeats** project will showcase my ability to use HTML, CSS and Javascript
-for my Milestrone Project 2.
+This Project has been designed as a web based application in which music reviews can be submitted, edited and updated. 
+The **Reviewsic** project will highlight what I have learnt in the course so far using HTML, CSS, Javascript but now with the addition of the 
+backend language Python and inclusion of database manipulation through Mongodb.
 
 ## Contents 
 1. [Project](#project)
@@ -18,29 +19,31 @@ for my Milestrone Project 2.
 
 
 ## Project <a name="project"></a>
-My project will be a reflection of what i have learnt so far from the (Full Stack Developer course). KeyBeats is a memory game which introduces various instruments that will light up when randomly generated, 
-players must then press the corresponding key in order to correctly select the instrument which is highlighted. 
-The game will progressively speed up and the time allowed to select each instrument will decrease making for a challenging memory game.
+My project will be a reflection of what I've learnt so far on the Full Stack Developer course. Reviewsic is a web based application which allows users to sign up and publish reviews of their favourite gigs, albums, eps and singles. 
+Each review published can be found on the users profile, where at any point the owner of the profile can edit, 
+update or delete any of the reviews they have posted. Along with the review posting to each individual profile it will also be sent directly to the main page where all users' 
+reviews can be found either through scrolling or using the search function.
 
-The site is made up of three individual pages with a consistent background across all of them.
-The three pages and their purposes are as follows:
+The site is made up of five individual pages with a consistent design throughout all. The five pages and purpose are as follows:
 
-- **Landing Page:** Simple design, eye catching image, navigation menu into the game.
-- **Game Page:** Instruction modal popup to inform player on what to do and where to play game.
-- **Contact :** Contact form for direct inquiry, feedback or ideas.
+- **Landing Page:** Initial page that all users will come to it will include a call to action for registration or login (If registration is required link will take you directly to registration page)
+- **Registration Page:** Registration form including First Name, Last Name, Username, Email and Password
+- **Reviews Page :** Cards showing user submitted reviews, search function to find specific reviews
+- **Upload Reviews Page :**  Form including Category, Artist Name, Record/Venue Name, Release/Show Date, Rating, Review and Image Upload
+- **Edit Reviews Page :** Same page as upload reviews page with pre filled form which is updatable to the Mongodb database
+- **Profile Page :** Profile: Users individual profile page showing own uploads where editing and deleting can occur
+
 
 ![Page Structure](assets/wireframe/KBStructure.jpg)
 
 ## UX <a name="ux"></a>
-This site brings a web based game to the user and allows the player to easily navigate through from landing page to full game mode with only a single click of the mouse. 
-Instructions are clearly outlined and are easy to find from the navigation menu on the home page. A contact form has also been added for queries, feedback or development ideas from players
- 
+This site brings the user to sign up and  easily navigate through from landing page to uploading reviews, seeing thier own dedicated profile and reading reviews.  
 ### User Stories
-
-- The user is able to enjoy playing the memory game.
-- The user has the ability to contact creators with ideas, questions and feedback.
-- The user will be instructed on how to play the game via a modal popup
-- The user will be able to record their highest score in a local capacity
+The users needs:
+- The user is able to upload reviews of  album, ep, single or live gig
+- The user is able to search for specific reviews from other users
+- The user is able to edit and delete own reviews at any point in time
+- The user is able to register and have dedicated profile
 
 ### Wireframes
 
@@ -53,17 +56,23 @@ The links below will take you to a PDF of each of the wireframes i have created 
 
 ## Features <a name="features"></a>
 
-Here is a list of the features included on the site. Along with possible additions later in order to develop the game.
+Here is a list of the features included on the site. Along with possible additions later in order to develop the site
 **Features included:**
-- Game Page where the game will be played
-- Contact form submission, allowing users to give feedback based on experience.
-- Instructions modal popup where detailed instructions in order to play will be given.
-- Responsive design, with a landing page that works well across all platforms from desktop to mobile.
+- Individual profile pages with ability to edit and delete previous reviews
+- Upload review page with in depth form passing all data to MongoDB
+- Reviews on main page in cards which expand with full detail once clicked on
+- Responsive design, with all pages working well on desktop, tablet and mobile
+- Search function using Artist Names and Album/Venue names to look for reviews.
+- Pop out calendar for date selection on upload page
 
 **Future features to be included at a later stage:**
-- Multiple difficulty selections will add more variety to the game.
-- Having the ability to pause the game will give users a better experience as they will be able to walk away and return whenever.
-- Local highscores recorded from last use
+- Positive and negative review voting system in order for users to have opinion on other peoples posts
+- Directly shareable reviews from profiles to social media including Facebook and Twitter
+
+**Other Feature Mentions**
+Whilst developing the use of an env.py was used to set and manage the environment variables during the programming process. 
+Social media links have been included in the development  process but will not be linked currently to any external pages, due to social media not existing currently for this project. 
+They have been included into the footer for the live site but are linked currently to a different source.
 
 
 
@@ -80,10 +89,9 @@ Various different technologies have been used throughout my project, they are as
 - **Markdown** A lightweight markup language with plain-text formatting syntax.
 - **HTML5** Another markup language, predominantly used to structure and present content to the world wide web.
 - **CSS3** Cascading style sheet language used in conjunction with HTML to create ontent and style.
-- **JavaScript** is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. 
 - **jQuery** is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
-- **EmailJS** allows sending email directly from Javascript, with no backend development.
-
+- **Python** Python is an interpreted, high-level and general purpose programming language
+- **MongoDB** MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
 
 
 ## Testing <a name="test"></a>
@@ -91,15 +99,15 @@ Various different technologies have been used throughout my project, they are as
 ### HTML Validatior
 All HTML Valid - Errors that show in contact.html are from Bootstrap form templates and EmailJS CDN.
 Results from HTML validatior:
-![HTML Validation](assets/images/ms2htmlvalid.jpg)
+![HTML Validation]()
 
 ### CSS Validatior
 Results from CSS validator - No Errors found.
-![CSS Validation](assets/images/cssvalidms2.jpg)
+![CSS Validation]()
 
 ### Js Validatior
 All Syntax Valid
-![JS Validation](assets/images/jsvalidation.jpg)
+![JS Validation]()
 
 
 ### Browser Compatability
