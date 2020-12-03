@@ -146,7 +146,7 @@ In order to successfully publish the website to **Heroku** use the following ste
 
 ### Content
 All design ideas are original content from the developer
-### Reviws
+### Reviews
 - [Alice In Chains Review](https://www.classicrockreview.com/2012/06/1992-alice-in-chains-dirt/)
 - [Pride & Glory Review](https://www.metal-archives.com/reviews/Pride_%26_Glory/Pride_%26_Glory/14825/)
 - [Fat Freddy's Drop Review](https://www.theupcoming.co.uk/2016/03/27/fat-freddys-drop-at-the-brixton-academy-live-review/#jp-carousel-248774)
