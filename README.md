@@ -115,6 +115,10 @@ Results from CSS validator - No Errors found.
 All Syntax Valid
 ![JS Validation](static/wireframe/jsvalid.jpg)
 
+### Python Validatior
+All Syntax Valid
+![Python Validation](static/wireframe/pyvalid.jpg)
+
 
 ### Browser Compatability
 Browser compatability was tested across five different web browsers and these are:

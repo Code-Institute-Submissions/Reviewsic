@@ -144,7 +144,7 @@ def edit_review(review_id):
         }
         mongo.db.reviews.update({"_id": ObjectId(review_id)}, confirm)
         flash("Review Successfully Updated!")
-        
+
 
     review = mongo.db.reviews.find_one({"_id":ObjectId(review_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
