@@ -147,12 +147,12 @@ In order to successfully publish the website to **Heroku** use the following ste
 ### Content
 All design ideas are original content from the developer
 ### Reviws
--[Alice In Chains Review](https://www.classicrockreview.com/2012/06/1992-alice-in-chains-dirt/)
--[Pride & Glory Review](https://www.metal-archives.com/reviews/Pride_%26_Glory/Pride_%26_Glory/14825/)
--[Fat Freddy's Drop Review](https://www.theupcoming.co.uk/2016/03/27/fat-freddys-drop-at-the-brixton-academy-live-review/#jp-carousel-248774)
--[Neil Young Review](https://pitchfork.com/reviews/tracks/berwyn-glory/)
--[Haim Review](http://www.thelazywomen.com/bar/a-review-of-wimpiii/)
--[Crostpath](https://www.threesongsandout.com/single-post/crostpaths-mutated-ep-review)
+- [Alice In Chains Review](https://www.classicrockreview.com/2012/06/1992-alice-in-chains-dirt/)
+- [Pride & Glory Review](https://www.metal-archives.com/reviews/Pride_%26_Glory/Pride_%26_Glory/14825/)
+- [Fat Freddy's Drop Review](https://www.theupcoming.co.uk/2016/03/27/fat-freddys-drop-at-the-brixton-academy-live-review/#jp-carousel-248774)
+- [Neil Young Review](https://pitchfork.com/reviews/tracks/berwyn-glory/)
+- [Haim Review](http://www.thelazywomen.com/bar/a-review-of-wimpiii/)
+- [Crostpath](https://www.threesongsandout.com/single-post/crostpaths-mutated-ep-review)
 ### Media
 - [The background image used across the web site](https://pixabay.com/photos/turntable-hub-s-record-players-2157300/)
 - [Favicon image](https://www.forbes.com/sites/sap/2019/08/17/can-vinyl-records-also-be-green/) 
