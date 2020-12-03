@@ -56,7 +56,8 @@ The links below will take you to a PDF of each of the wireframes i have created 
 
 ## Features <a name="features"></a>
 
-Here is a list of the features included on the site. Along with possible additions later in order to develop the site
+Here is a list of the features included on the site. Along with possible additions later in order to develop the site:
+
 **Features included:**
 - Individual profile pages with ability to edit and delete previous reviews
 - Upload review page with in depth form passing all data to MongoDB
@@ -74,6 +75,12 @@ Whilst developing the use of an env.py was used to set and manage the environmen
 Social media links have been included in the development  process but will not be linked currently to any external pages, due to social media not existing currently for this project. 
 They have been included into the footer for the live site but are linked currently to a different source.
 
+### Development Modification
+During the development process various factors that had been shown in the design of the site through wireframes didn't work as well on the live site. The main modifcation 
+is the inclusion of a background across the whole site in order to make the webpage more interesting to look at, by doing this containers were added to forms and the callouts to 
+give more definition and calrity to the input fields, colourful buttons were also added as an eye catching adjustment. The choice to not automatically log users in after registration has been considered 
+as an extra security measure meaning the user will have to physically log in after registration. Finally not adding the socail media buttons onto the footer was decided as they wouldnt be linked to any external page
+but is something that can be added at a later date.
 
 
 ## Technologies <a name="tech"></a>
@@ -122,10 +129,6 @@ Browser compatability was tested across five different web browsers and these ar
 The game was desinged using Google Chrome however functions on all browsers mentioned above. 
 
 ### Other testing
-Email testing occured in order to perfect the use of EmailJS results can be seen in the photos below:
-
-![EmailJS Test](assets/images/emailjstest.jpg)
-![EmailJS Test Confirmation](assets/images/emailjstestconfirm.jpg)
 
 
 ## Deployment <a name="deploy"></a>
