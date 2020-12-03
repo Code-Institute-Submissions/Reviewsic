@@ -145,18 +145,23 @@ In order to successfully publish the website to **Heroku** use the following ste
 ## Credits <a name="credit"></a>
 
 ### Content
-All text and design ideas are original content from the developer
+All design ideas are original content from the developer
+### Reviws
+-[Alice In Chains Review](https://www.classicrockreview.com/2012/06/1992-alice-in-chains-dirt/)
+-[Pride & Glory Review](https://www.metal-archives.com/reviews/Pride_%26_Glory/Pride_%26_Glory/14825/)
+-[Fat Freddy's Drop Review](https://www.theupcoming.co.uk/2016/03/27/fat-freddys-drop-at-the-brixton-academy-live-review/#jp-carousel-248774)
+-[Neil Young Review](https://pitchfork.com/reviews/tracks/berwyn-glory/)
+-[Haim Review](http://www.thelazywomen.com/bar/a-review-of-wimpiii/)
+-[Crostpath](https://www.threesongsandout.com/single-post/crostpaths-mutated-ep-review)
 ### Media
-- [The background image used across the game site](https://unsplash.com/photos/Ef96lad5ORk)
-- All sounds used for game from [SampleSwap](https://sampleswap.org/)
-- [Favicon image](https://pixabay.com/photos/piano-piano-keys-music-instrument-1245645/) 
+- [The background image used across the web site](https://pixabay.com/photos/turntable-hub-s-record-players-2157300/)
+- [Favicon image](https://www.forbes.com/sites/sap/2019/08/17/can-vinyl-records-also-be-green/) 
 - Main Icons from https://fontawesome.com/
 
 ### Acknowledgements
-I gained inspiration for designing a game in order to showcase my ability, i would like to thank 
+I gained inspiration for designing a music review webpage in order to showcase my ability, i would like to thank 
 my partner for the constant support and clarity to assist me to develop calmly. I would also like to give 
-a large amount of thanks and praise to my mentor Jonathan Munz for once again being incredibly supportive of 
-my inital ideas, along with giving me the guidance during what i found to be a tough step up into the Javascipt world. 
+a large amount of thanks and praise to my mentor Jonathan Munz for once again being supportive of my ideas
 My final praise goes to all the tutors, mentors, alumni and current students at Code Institute for being supportive predominantly through
-Slack, but also via phonecall, skype and email. The community here ate Code Institute is something to be admired especially during 
+Slack, and email. The community here ate Code Institute is something to be admired especially during 
 these tought times! so THANK YOU again!.
