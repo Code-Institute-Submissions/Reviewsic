@@ -49,9 +49,9 @@ The users needs:
 
 The links below will take you to a PDF of each of the wireframes i have created for this project.
 
-[Desktop Wireframe](https://github.com/adams-ears/KeyBeats/blob/master/assets/wireframe/KBdesktop.pdf)
+[Desktop Wireframe](https://github.com/adams-ears/Reviewsic/blob/master/static/wireframe/Desktop%20Wireframe.pdf)
 
-[mobile Wireframe](https://github.com/adams-ears/KeyBeats/blob/master/assets/wireframe/KBmobile.pdf)
+[Mobile Wireframe](https://github.com/adams-ears/Reviewsic/blob/master/static/wireframe/Mobile%20Wireframe.pdf)
 
 
 ## Features <a name="features"></a>
