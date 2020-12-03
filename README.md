@@ -104,17 +104,16 @@ Various different technologies have been used throughout my project, they are as
 ## Testing <a name="test"></a>
 
 ### HTML Validatior
-All HTML Valid - Errors that show in contact.html are from Bootstrap form templates and EmailJS CDN.
-Results from HTML validatior:
-![HTML Validation]()
+All HTML Valid - No Errors Found:
+![HTML Validation](static/wireframe/htmlvalid.jpg)
 
 ### CSS Validatior
 Results from CSS validator - No Errors found.
-![CSS Validation]()
+![CSS Validation](static/wireframe/cssvalid.jpg)
 
 ### Js Validatior
 All Syntax Valid
-![JS Validation]()
+![JS Validation](static/wireframe/jsvalid.jpg)
 
 
 ### Browser Compatability
