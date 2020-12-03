@@ -34,7 +34,7 @@ The site is made up of five individual pages with a consistent design throughout
 - **Profile Page :** Profile: Users individual profile page showing own uploads where editing and deleting can occur
 
 
-![Page Structure](assets/wireframe/KBStructure.jpg)
+![Page Structure](static/wireframe/revstructure.jpg)
 
 ## UX <a name="ux"></a>
 This site brings the user to sign up and  easily navigate through from landing page to uploading reviews, seeing thier own dedicated profile and reading reviews.  
